@@ -13,3 +13,13 @@ for word in words:
     output += emojis.get(word, word) + ' '
 print(output)
 # If they type a word that isn't in the dictionary, the default should just be that word
+
+words = message.split(' ')
+emojis = {
+    ':)': 'smiley',
+    ':(': 'frowney'
+}
+output = ''
+for word in words:
+    output += emojis.get(word, word) + ' '
+print(output)
